@@ -11,6 +11,25 @@
         <div class="mainpage">
         <nav class="navigation">
             <div class="navbox">
+                
+                <div class="menu-container"> 
+                    <div class="menu-icon" onclick="toggleMenu()"><img src="./images/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+                    <div class="close-icon" onclick="toggleMenu()" style="display: none;"><img src="./images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+                    <div class="linksnav-mobile" id="menu" style="display: none;">
+                        <div class="dropdown-mobile">
+                            <a href="#">Furniture <span>&#9662;</span></a> 
+                            <ul class="dropdown-menu-mobile">
+                                <li><a href="#">Chairs</a></li>
+                                <li><a href="#">Tables</a></li>
+                                <li><a href="#">Sofas</a></li>
+                            </ul>
+                        </div>
+                        <a href="#">Shop</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>                
+
                 <div class="navleft">
                 <h3>Panto</h3>
                 </div>
@@ -27,12 +46,13 @@
                 <a href="#">About Us</a>
                 <a href="#">Contact</a>
                 </div>
-                <div class="navright">
+                <div class="navright navright-image">
                     <img src="./images/Bag.svg" alt="">
                     <p class="cart"><span id="cartSize">0</span></p>
                 </div>
             </div>
         </nav>
+
          <section class="sect1">
             <div class="sectbox">
                 <h1>Make your interior more minimalistic & modern</h1>
@@ -54,7 +74,7 @@
             </div>
             <div class="r1">
                 <h3>Luxury facilities</h3>
-                <p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+                <p>The advantage of hiring a workspace with us is that gives you comfortable service and all-around facilities.</p>
                 <a href="#" class="more-info-link">
                     More Info
                     <span class="arrow">&rarr;</span>
@@ -213,15 +233,15 @@
                 <div class="sect4img">
                     <div class="empty-1"></div>
                     <div class="empty-2"></div> 
-                    <img style="z-index: 3; position: absolute; width: 629px; height: 445px; left: -27px;" src="./images/Rectangle 1446.svg" alt="">
-                    <img style="z-index: 2; position: absolute; top: 100px; bottom: -30px; left: 20px; border-radius: 49px; width: 555px; height: 423px;" src="./images/Rectangle 1447.svg" alt=""> 
+                    <img class="img1-4" src="./images/Rectangle 1446.svg" alt="">
+                    <img class="img2-4" src="./images/Rectangle 1447.svg" alt=""> 
                 </div>
 
                 <div class="sect4text">
                     <h3>experiences</h3>
                     <h2>we provide you the best experience</h2>
                     <p>You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials</p>
-                    <a href="#" class="more-info-link">
+                    <a href="#" class="more-info-link more-mobile">
                     More Info
                     <span class="arrow">&rarr;</span>
                     </a>
@@ -239,25 +259,29 @@
                     More Info
                     <span class="arrow">&rarr;</span>
                     </a>
-                </div> 
+                </div>
 
                 <div class="sect5img">
-                    <div style="position: relative; width: 223px;">
-                        <img style="position:relative; z-index: 1;" src="./images/Rectangle 1450.svg" alt="">
-                        <img style="position: absolute; bottom: -21px; left: 24px; width: 176px; height: 183px; border-radius: 29px; z-index: 0;" src="./images/Rectangle 1448 (1).svg" alt="">
+                    <div class="div5-1">
+                        <img class="img1-5" src="./images/Rectangle 1450.svg" alt="">
+
+                        <img class="img2-5" src="./images/Rectangle 1448 (1).svg" alt="">
                     </div>
 
-                    <div style="position: relative; width: 223px;">
-                        <img style="position:relative; z-index: 1;" src="./images/Rectangle 1450 (1).svg" alt="">  
-                        <img style="position: absolute; top: 40px; left: 23px; width: 176px; height: 301px; border-radius: 29px; opacity: 0.5; z-index: 0;" src="./images/Rectangle 1448.svg" alt="">
+                    <div class="div5-1">
+                        <img class="img3-5" src="./images/Rectangle 1450 (1).svg" alt="">  
+
+                        <img class="img4-5" src="./images/Rectangle 1448.svg" alt="">
                     </div>
                 </div>
 
-                <div style="position: relative; margin-top: 139px;">
+                <div class="div5-2">
                     <div class="empty-3"></div>
-                    <img style="position: relative; z-index: 2;" src="./images/Rectangle 1446 (2).svg" alt="">
-                    <img style="position: absolute; z-index: 1; top: 100px; left: 27px; border-radius: 49px; width: 555px; height: 423px; opacity: 0.5;" src="./images/Rectangle 1447 (2).svg" alt="">
+                    <img class="img5-5" src="./images/Rectangle 1446 (2).svg" alt="">
+
+                    <img class="img6-5" src="./images/Rectangle 1447 (2).svg" alt="">
                 </div>
+                
                 </div>
             </section>
 
@@ -356,7 +380,7 @@
                 <div class="footrow">
                     <div class="foot1">
                         <h3>Panto</h3>    
-                        <p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+                        <p>The advantage of hiring a workspace with us is that gives you comfortable service and all-around facilities.</p>
                     </div> 
 
                     <div class="foot2">
@@ -391,5 +415,24 @@
                 </div>
         </footer>
     </div> 
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const menuIcon = document.querySelector('.menu-icon');
+    const closeIcon = document.querySelector('.close-icon');
+
+    if (menu.style.display === 'none') {
+        menu.style.display = 'block'; // Show the menu
+        menuIcon.style.display = 'none'; // Hide the menu icon
+        closeIcon.style.display = 'block'; // Show the close icon
+    } else {
+        menu.style.display = 'none'; // Hide the menu
+        menuIcon.style.display = 'block'; // Show the menu icon
+        closeIcon.style.display = 'none'; // Hide the close icon
+    }
+}
+</script>
+
 </body>
 </html>
