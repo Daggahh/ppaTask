@@ -1911,7 +1911,7 @@ display: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: visible;
+    overflow: hidden;
   }
   
   .sect5text h3{
@@ -2167,6 +2167,7 @@ opacity: 0.8;
       height: auto;
       display: flex;
       flex-direction: column;
+      margin-top: 60px;
     }
     
     .footrow {
@@ -3059,7 +3060,7 @@ display: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: visible;
+    overflow: hidden;
   }
   
   .sect5text h3{
@@ -3315,6 +3316,7 @@ opacity: 0.8;
       height: auto;
       display: flex;
       flex-direction: column;
+      margin-top: 60px;
     }
     
     .footrow {
