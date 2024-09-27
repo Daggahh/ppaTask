@@ -1996,6 +1996,7 @@ opacity: 0.8;
    align-items: flex-end;
    justify-content: flex-end;
    width: 100%;
+   padding-bottom: 30px;
   }
   
   .empty-3{
@@ -3106,8 +3107,8 @@ opacity: 0.8;
   .div5-1{
     position: relative; 
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     width: 100%;
   }
   
@@ -3120,7 +3121,7 @@ opacity: 0.8;
   .img2-5{
     position: absolute; 
     bottom: -68px; 
-    left: 193px; 
+    left: 114px; 
     width: 176px;
     height: 183px;
      border-radius: 29px;
@@ -3130,7 +3131,7 @@ opacity: 0.8;
   .img4-5{
     position: absolute; 
     top: 97px; 
-    left: 193px; 
+    left: 114px; 
     width: 176px; 
     height: 293px; 
     border-radius: 29px; 
@@ -3145,10 +3146,11 @@ opacity: 0.8;
    align-items: flex-end;
    justify-content: flex-end;
    width: 100%;
+   padding-bottom: 30px;
   }
   
   .empty-3{
-    width: 300px;
+    width: 100%;
     height: 200px;
     position: absolute;
     top: -29px;
