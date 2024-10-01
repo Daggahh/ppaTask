@@ -6,7 +6,11 @@
   
   .container {
     padding: 0;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    overflow: hidden;
   }
 
   @font-face {
@@ -28,16 +32,6 @@
     src: url(./fonts/Gilroy-Regular.ttf) format('truetype');
     font-weight: 400;
     font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Inter';
-    src: url(./fonts/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'DM Sans';
-    src: url(./fonts/DMSans-VariableFont_opsz\,wght.ttf) format('truetype');
   }
 
   .mainpage {
@@ -635,7 +629,7 @@
   left: -65px;
   border-radius: 20px;
   background-color: #F7F7F7;
-  z-index: -2;
+  z-index: 0;
 }
 
 .empty-2{
@@ -1161,7 +1155,9 @@ text-decoration: none;
     
     .container {
       padding: 0;
-      width: 100%;
+      max-width: 768px;
+      width: 100%; 
+      overflow: hidden;
     }
   
     @font-face {
@@ -1806,7 +1802,7 @@ display: none;
     left: -65px;
     border-radius: 20px;
     background-color: #F7F7F7;
-    z-index: -2;
+    z-index: 0;
   }
   
   .empty-2{
@@ -2311,7 +2307,9 @@ opacity: 0.8;
     
     .container {
       padding: 0;
-      width: 100%;
+      max-width: 500px;
+      width: 100%; 
+      overflow: hidden;
     }
   
     @font-face {
@@ -2956,7 +2954,7 @@ display: none;
     left: -65px;
     border-radius: 20px;
     background-color: #F7F7F7;
-    z-index: -2;
+    z-index: 0;
   }
   
   .empty-2{
