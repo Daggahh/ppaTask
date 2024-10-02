@@ -23,12 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (entry.isIntersecting) {
                     const lazyBackground = entry.target;
                     const bgUrl = lazyBackground.getAttribute("data-bg");
-                    
-                    lazyBackground.style.backgroundImage = `url('${bgUrl}')`;
-                    
-                    lazyBackground.classList.add("lazy-loaded");
 
-                    backgroundObserver.unobserve(lazyBackground);
+                    if (bgUrl) {
+                        lazyBackground.style.backgroundImage = `url('${bgUrl}')`;
+                        lazyBackground.classList.add("lazy-loaded");
+
+                        observer.unobserve(lazyBackground);
+                    }
                 }
             });
         });
