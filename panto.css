@@ -13,27 +13,6 @@
     overflow: hidden;
   }
 
-  @font-face {
-    font-family: 'Gilroy';
-    src: url(./fonts/Gilroy-Bold.ttf) format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Gilroy';
-    src: url(./fonts/Gilroy-Medium.ttf) format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Gilroy';
-    src: url(./fonts/Gilroy-Regular.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-
   .mainpage {
     position: relative;
     width: 100%;
@@ -58,7 +37,7 @@
   }
 
   .navleft h3 {
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 28px;
     line-height: 32.81px;
@@ -68,7 +47,7 @@
   .linksnav a {
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 21.09px;
@@ -163,24 +142,25 @@
   
   .sectbox h1 {
     color: #ffffff;
+    text-transform: capitalize;
     font-size: 80px;
     font-weight: bold;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat';
     line-height: 104px;
     letter-spacing: -0.01em;
     text-align: center;
-    width: 861px;
+    width: 100%;
     height: 208px;
   }
   
   .sectbox p {
     color: #FFFFFF;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
     line-height: 38.4px;
-    width: 606px;
+    width: 640px;
     height: 76px;
     opacity: 0.8;
     margin: 14px 0px 45px;
@@ -208,7 +188,7 @@
 }
 
 .search-bar input::placeholder {
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -235,8 +215,14 @@
 .sect2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 40px;    
     margin: 120px 80px;
+}
+
+.sect2-reasons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .r1, .r2, .r3{
@@ -246,28 +232,28 @@
 }
   
 .reasons h2 {
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 42px;
     line-height: 49.22px;
     color: #1E1E1E; 
-    width: 242px;
+    width: 276px;
     height: 104px;
 }
   
 .sect2 h3{
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 24px;
   line-height: 28.13px;
   color: #1E1E1E; 
-  width: 178px;
+  width: 204px;
   height: 30px;
   opacity: 0.9;
 }
 
 .sect2 p{
-  font-family: 'Gilroy', sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 29.6px;
@@ -280,7 +266,7 @@
 .more-info-link {
   display: inline-flex;
   align-items: center;
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 25.9px;
@@ -317,15 +303,16 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 50px;
+    text-align: center;
   }
   
   .products h2 {
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 42px;
     line-height: 49.22px;
     color: #1E1E1E; 
-    width: 389px;
+    width: 100%;
     height: 52px;
   }
 
@@ -339,7 +326,7 @@
     border-radius: 44px;
     background-color: #EEEEEE;
     margin-top: 32px;
-  transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease; 
   }
 
   .products-selection a:hover{
@@ -357,7 +344,7 @@
   }
 
   .products-selection a{
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
@@ -371,13 +358,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1198.35px;
     height: 492px;
     margin: 80px 121px 60px;
   }
 
 .products-one, .products-two, .products-three, .products-four{
-  width: 268.09px;
   height: 492px;
   background-color: #FAFAFA;
 }
@@ -563,7 +548,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 33.3px;
@@ -643,8 +628,6 @@
 } 
 
 .sect4text{
-  width: 556px;
-  height: 132px;
   opacity: 0.8;
   gap: 20px;
   display: flex;
@@ -652,7 +635,7 @@
 }
 
 .sect4text h3{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: 600;
 font-size: 18px;
 line-height: 21.09px;
@@ -662,23 +645,22 @@ text-transform: uppercase;
 }
 
 .sect4text h2{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: bold;
 font-size: 42px;
 line-height: 49.22px;
-color: #1E1E1E;
-width: 413px;
-height: 104px;
+color: #000000;
+width: 441px;
 text-transform: capitalize;
 }
 
 .sect4text p{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: 400;
 font-size: 18px; 
 line-height: 33.3px;
 color: #1E1E1E;
-width: 556px;
+width: 579px;
 height: 132px;
 opacity: 0.8;
 }
@@ -688,8 +670,6 @@ opacity: 0.8;
 }
 
 .sect5text{
-  width: 556px;
-  height: 132px;
   opacity: 0.8;
   gap: 20px;
   display: flex;
@@ -707,7 +687,7 @@ opacity: 0.8;
 }
 
 .sect5text h3{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: 600;
 font-size: 18px;
 line-height: 21.09px;
@@ -717,24 +697,22 @@ text-transform: uppercase;
 }
 
 .sect5text h2{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: bold;
 font-size: 42px;
 line-height: 49.22px;
-color: #1E1E1E;
-width: 413px;
-height: 156px;
+color: #000000;
+width: 463px;
 text-transform: capitalize;
 }
 
 .sect5text p{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: 400;
 font-size: 18px; 
 line-height: 33.3px;
 color: #1E1E1E;
-width: 556px;
-height: 132px;
+width: 588px;
 opacity: 0.8;
 }
 
@@ -810,7 +788,6 @@ opacity: 0.8;
 .testimonials{
   width: 413px;
   height: 94px;
-  align-items: center;
   margin: 240px auto 60px; 
   display: flex;
   flex-direction: column;
@@ -819,7 +796,7 @@ opacity: 0.8;
 }
 
 .testimonials h3{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: 600;
 font-size: 18px;
 line-height: 21.09px;
@@ -830,22 +807,23 @@ text-transform: uppercase;
 }
 
 .testimonials h2{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: bold;
   font-size: 42px;
   line-height: 49.22px;
-  text-align: center;  
 color: #1E1E1E;
 text-align: center;
 text-transform: capitalize;
+width: 419px;
 }
 
 .rev{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 127px 215px;
+  margin: 0px 127px;
   position: relative;
+  gap: 30px;
 }
 
 .slider-container-3 {
@@ -980,7 +958,7 @@ text-transform: capitalize;
 }
 
 .user-info h4{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: bold;
 font-size: 18px;
 line-height: 21.09px;
@@ -989,7 +967,7 @@ color: #1E1E1E;
 }
 
 .user-info p{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: 400;
 font-size: 12px;
 line-height: 14.06px;
@@ -998,13 +976,13 @@ color: #1E1E1E;
 }
 
 .user-quote p{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
 font-size: 14px;
 line-height: 16.41px;
 text-align: center;
 opacity: 0.8;
 color: #1E1E1E;
-width: 252px;
+width: 260px;
 height: 51px;
 margin-bottom: 22px;
 }
@@ -1026,6 +1004,7 @@ margin-bottom: 22px;
     height: 462px;
     display: flex;
     flex-direction: column;
+    margin-top: 214px;
   }
   
   .footrow {
@@ -1038,7 +1017,7 @@ margin-bottom: 22px;
  }
   
   .foot1 h3 {
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: bold;
     font-size: 28px;
     line-height: 32.81px;
@@ -1047,11 +1026,11 @@ margin-bottom: 22px;
   }
   
   .foot1 p {
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-size: 15px;
     line-height: 24px;
     color: #1E1E1E;
-    width: 293px;
+    width: 314px;
     height: 72px;
     opacity: 0.8;
     margin-top:29px;
@@ -1081,7 +1060,7 @@ margin-bottom: 22px;
   .foot2 a,
   .foot3 a,
   .foot4 a {
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 500;
 font-size: 15px;
 line-height: 24px;
@@ -1130,11 +1109,11 @@ text-decoration: none;
   }
 
   .terms a {
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 500;
     font-size: 15px;
     line-height: 24px;
-    width: 133px;
+    width: 148px;
     height: 24px;
     opacity: 0.8;
     color: #1E1E1E;
@@ -1158,27 +1137,6 @@ text-decoration: none;
       width: 100%; 
       overflow: hidden;
     }
-  
-    @font-face {
-      font-family: 'Gilroy';
-      src: url(./fonts/Gilroy-Bold.ttf) format('truetype');
-      font-weight: 700;
-      font-style: normal;
-    }
-  
-    @font-face {
-      font-family: 'Gilroy';
-      src: url(./fonts/Gilroy-Medium.ttf) format('truetype');
-      font-weight: 500;
-      font-style: normal;
-    }
-    
-    @font-face {
-      font-family: 'Gilroy';
-      src: url(./fonts/Gilroy-Regular.ttf) format('truetype');
-      font-weight: 400;
-      font-style: normal;
-    }
 
     .mainpage {
       position: relative;
@@ -1201,7 +1159,7 @@ text-decoration: none;
     }
   
     .navleft h3 {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       font-size: 28px;
       line-height: 32.81px;
@@ -1251,7 +1209,7 @@ text-decoration: none;
         padding: 10px 0;
         text-decoration: none;
         color: #ffffff;
-        font-family: 'Gilroy', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         font-weight: 500;
         line-height: 21.09px;
@@ -1383,7 +1341,7 @@ text-decoration: none;
       color: #ffffff;
       font-size: 60px;
       font-weight: bold;
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       line-height: 70px;
       letter-spacing: -0.01em;
       text-align: center;
@@ -1393,7 +1351,7 @@ text-decoration: none;
     
     .sectbox p {
       color: #FFFFFF;
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: 19px;
       font-weight: 400;
       text-align: center;
@@ -1427,7 +1385,7 @@ text-decoration: none;
   }
   
   .search-bar input::placeholder {
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -1467,7 +1425,7 @@ text-decoration: none;
   }
     
   .reasons h2 {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: 700;
       font-size: 24px;
       line-height: 24.61px;
@@ -1477,7 +1435,7 @@ text-decoration: none;
   }
     
   .sect2 h3{
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 19px;
@@ -1489,7 +1447,7 @@ text-decoration: none;
   }
   
   .sect2 p{
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -1503,7 +1461,7 @@ text-decoration: none;
   .more-info-link {
     display: inline-flex;
     align-items: center;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -1544,7 +1502,7 @@ text-decoration: none;
     }
     
     .products h2 {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       font-size: 21px;
       line-height: 24px;
@@ -1582,7 +1540,7 @@ text-decoration: none;
     }
   
     .products-selection a{
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       text-decoration: none;
       font-weight: 500;
       font-size: 18px;
@@ -1712,7 +1670,7 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 33.3px;
@@ -1751,39 +1709,37 @@ display: none;
     position: relative;
     height: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;
   }
 
   .sect4img{
     width: 100%;
-    height: 250px;
+    height: auto;
     margin-bottom: 50px;
   }
 
   .img1-4{
     z-index: 3; 
     position: absolute;
-    width: 350px; 
-    height: 225px; 
+    width: 367px; 
+    height: 245px; 
     left: -27px;
   }
   
   .img2-4{
     z-index: 2; 
     position: absolute; 
-    top: 50px; 
+    top: 71px; 
     bottom: -30px; 
-    left: 10px; 
+    left: -11px; 
     border-radius: 49px;
-    width: 277px; 
+    width: 351px; 
     height: 211px;
   }
   
   
   .empty-1{
-    width: 300px;
+    width: 352px;
     height: 211px;
     position: absolute;
     top: -20px;
@@ -1795,10 +1751,10 @@ display: none;
   
   .empty-2{
     width: 290px;
-    height: 180px;
+    height: 190px;
     position: absolute;
-    top: 30px;
-    left: 40px;
+    top: 33px;
+    left: 69px;
     border-radius: 20px 20px;
     background-color: #F7F7F7;
     z-index: 0;
@@ -1816,7 +1772,7 @@ display: none;
   }
   
   .sect4text h3{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 600;
   font-size: 18px;
   line-height: 21.09px;
@@ -1827,7 +1783,7 @@ display: none;
   }
   
   .sect4text h2{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: bold;
   font-size: 24px;
   line-height: 33.61px;
@@ -1838,7 +1794,7 @@ display: none;
   }
   
   .sect4text p{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 400;
   font-size: 11px; 
   line-height: 20.7px;
@@ -1852,7 +1808,7 @@ display: none;
     display: flex;
     align-items:flex-end ;
     justify-content: flex-end;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 10px;
@@ -1878,6 +1834,14 @@ display: none;
   .section-5{
     width: 100%;
   }
+
+  .sect5 {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
   
   .sect5text{
     width: 100%;
@@ -1890,16 +1854,8 @@ display: none;
     padding: 10px;
   }
   
-  .sect5 {
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-  
   .sect5text h3{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 600;
   font-size: 18px;
   line-height: 21.09px;
@@ -1910,7 +1866,7 @@ padding-top: 10px;
   }
   
   .sect5text h2{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: bold;
 font-size: 24px;
 line-height: 33.61px;
@@ -1921,7 +1877,7 @@ width: 100%;
   }
   
   .sect5text p{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: 400;
 font-size: 11px; 
 line-height: 20.7px;
@@ -1934,39 +1890,38 @@ opacity: 0.8;
   .sect5img{
     display: flex;
     flex-direction: column;
-    gap: 47px;
-    margin-top: 50px;
+    gap: 40px;
+    margin-top: 30px;
   }
 
   
   .div5-1{
     position: relative; 
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
     width: 100%;
   }
   
   .img1-5, .img3-5{
-    position:relative; 
-    z-index: 1;
+    z-index: 2;
     padding: 10px;
+    width: 200px;
   }
   
   .img2-5{
     position: absolute; 
-    bottom: -68px; 
-    left: 566px; 
+    bottom: -58px; 
+    left: 10px; 
     width: 176px;
     height: 183px;
      border-radius: 29px;
-     z-index: 0;
+     z-index: 1;
   }
   
   .img4-5{
     position: absolute; 
-    top: 97px; 
-    left: 566px; 
+    top: 53px;
+    left: 10px;
     width: 176px; 
     height: 293px; 
     border-radius: 29px; 
@@ -1977,10 +1932,8 @@ opacity: 0.8;
   .div5-2{
    position: relative; 
    display: flex;
-   align-items: flex-end;
-   justify-content: flex-end;
+    align-items: center;
    width: 100%;
-   padding-bottom: 30px;
   }
   
   .empty-3{
@@ -1988,7 +1941,7 @@ opacity: 0.8;
     height: 200px;
     position: absolute;
     top: -29px;
-    left: 333px;
+    right: 0;
     border-radius: 20px 0px 20px;
     background-color: #F7F7F7;
     z-index: 0;
@@ -1997,14 +1950,14 @@ opacity: 0.8;
   .img5-5{
     position:relative; 
     z-index: 2;
-    width: 500px;
+    width: 300px;
   }
   
   .img6-5{
     position: absolute; 
     z-index: 1; 
-    top: 175px; 
-    left: 392px; 
+    top: -26px; 
+    left: 1px; 
     border-radius: 49px; 
     width: 350px; 
     height: auto; 
@@ -2022,7 +1975,7 @@ opacity: 0.8;
   }
   
   .testimonials h3{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 600;
   font-size: 18px;
   line-height: 21.09px;
@@ -2033,7 +1986,7 @@ opacity: 0.8;
   }
   
   .testimonials h2{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: bold;
     font-size: 24px;
     line-height: 24.61px;
@@ -2106,7 +2059,7 @@ opacity: 0.8;
   }
   
   .user-info h4{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: bold;
   font-size: 18px;
   line-height: 21.09px;
@@ -2115,7 +2068,7 @@ opacity: 0.8;
   }
   
   .user-info p{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 400;
   font-size: 12px;
   line-height: 14.06px;
@@ -2124,7 +2077,7 @@ opacity: 0.8;
   }
   
   .user-quote p{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
   font-size: 14px;
   line-height: 16.41px;
   text-align: center;
@@ -2172,7 +2125,7 @@ opacity: 0.8;
    }
     
     .foot1 h3 {
-      font-family: 'Gilroy';
+      font-family: 'Montserrat';
       font-weight: bold;
       font-size: 28px;
       line-height: 16px;
@@ -2183,7 +2136,7 @@ opacity: 0.8;
     
     .foot1 p {
       width: 100%;
-      font-family: 'Gilroy';
+      font-family: 'Montserrat';
       font-size: 15px;
       line-height: 24px;
       color: #1E1E1E;
@@ -2219,7 +2172,7 @@ opacity: 0.8;
     .foot2 a,
     .foot3 a,
     .foot4 a {
-      font-family: 'Gilroy';
+      font-family: 'Montserrat';
       font-weight: 500;
   font-size: 15px;
   line-height: 24px;
@@ -2270,7 +2223,7 @@ opacity: 0.8;
     }
   
     .terms a {
-      font-family: 'Gilroy';
+      font-family: 'Montserrat';
       font-weight: 500;
       font-size: 15px;
       line-height: 24px;
@@ -2299,28 +2252,6 @@ opacity: 0.8;
       width: 100%; 
       overflow: hidden;
     }
-  
-    @font-face {
-      font-family: 'Gilroy';
-      src: url(./fonts/Gilroy-Bold.ttf) format('truetype');
-      font-weight: 700;
-      font-style: normal;
-    }
-  
-    @font-face {
-      font-family: 'Gilroy';
-      src: url(./fonts/Gilroy-Medium.ttf) format('truetype');
-      font-weight: 500;
-      font-style: normal;
-    }
-    
-    @font-face {
-      font-family: 'Gilroy';
-      src: url(./fonts/Gilroy-Regular.ttf) format('truetype');
-      font-weight: 400;
-      font-style: normal;
-    }
-  
 
     .mainpage {
       position: relative;
@@ -2343,7 +2274,7 @@ opacity: 0.8;
     }
   
     .navleft h3 {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       font-size: 28px;
       line-height: 32.81px;
@@ -2393,7 +2324,7 @@ opacity: 0.8;
         padding: 10px 0;
         text-decoration: none;
         color: #ffffff;
-        font-family: 'Gilroy', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         font-weight: 500;
         line-height: 21.09px;
@@ -2525,7 +2456,7 @@ opacity: 0.8;
       color: #ffffff;
       font-size: 24px;
       font-weight: bold;
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       line-height: 42px;
       letter-spacing: -0.01em;
       text-align: center;
@@ -2535,7 +2466,7 @@ opacity: 0.8;
     
     .sectbox p {
       color: #FFFFFF;
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: 12px;
       font-weight: 400;
       text-align: center;
@@ -2569,7 +2500,7 @@ opacity: 0.8;
   }
   
   .search-bar input::placeholder {
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -2600,6 +2531,13 @@ opacity: 0.8;
       gap: 30px;
       margin: 0;
   }
+
+  .sect2-reasons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
   
   .r1, .r2, .r3{
     display: flex;
@@ -2609,7 +2547,7 @@ opacity: 0.8;
   }
     
   .reasons h2 {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: 700;
       font-size: 24px;
       line-height: 24.61px;
@@ -2619,7 +2557,7 @@ opacity: 0.8;
   }
     
   .sect2 h3{
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 19px;
@@ -2631,7 +2569,7 @@ opacity: 0.8;
   }
   
   .sect2 p{
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -2645,7 +2583,7 @@ opacity: 0.8;
   .more-info-link {
     display: inline-flex;
     align-items: center;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -2686,7 +2624,7 @@ opacity: 0.8;
     }
     
     .products h2 {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       font-size: 21px;
       line-height: 24px;
@@ -2724,7 +2662,7 @@ opacity: 0.8;
     }
   
     .products-selection a{
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       text-decoration: none;
       font-weight: 500;
       font-size: 18px;
@@ -2854,7 +2792,7 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 33.3px;
@@ -2917,9 +2855,9 @@ display: none;
     position: absolute; 
     top: 50px; 
     bottom: -30px; 
-    left: 10px; 
+    left: -15px; 
     border-radius: 49px;
-    width: 277px; 
+    width: 345px; 
     height: 211px;
   }
   
@@ -2940,7 +2878,7 @@ display: none;
     height: 180px;
     position: absolute;
     top: 30px;
-    left: 40px;
+    left: 53px;
     border-radius: 20px 20px;
     background-color: #F7F7F7;
     z-index: 0;
@@ -2958,7 +2896,7 @@ display: none;
   }
   
   .sect4text h3{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 600;
   font-size: 18px;
   line-height: 21.09px;
@@ -2969,7 +2907,7 @@ display: none;
   }
   
   .sect4text h2{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: bold;
   font-size: 24px;
   line-height: 33.61px;
@@ -2980,7 +2918,7 @@ display: none;
   }
   
   .sect4text p{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 400;
   font-size: 11px; 
   line-height: 20.7px;
@@ -2994,7 +2932,7 @@ display: none;
     display: flex;
     align-items:flex-end ;
     justify-content: flex-end;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 10px;
@@ -3041,7 +2979,7 @@ display: none;
   }
   
   .sect5text h3{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 600;
   font-size: 18px;
   line-height: 21.09px;
@@ -3052,7 +2990,7 @@ padding-top: 10px;
   }
   
   .sect5text h2{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: bold;
 font-size: 24px;
 line-height: 33.61px;
@@ -3063,7 +3001,7 @@ width: 100%;
   }
   
   .sect5text p{
-  font-family: 'Gilroy';
+  font-family: 'Montserrat';
   font-weight: 400;
 font-size: 11px; 
 line-height: 20.7px;
@@ -3097,7 +3035,7 @@ opacity: 0.8;
   .img2-5{
     position: absolute; 
     bottom: -68px; 
-    left: 114px; 
+    left: 19px; 
     width: 176px;
     height: 183px;
      border-radius: 29px;
@@ -3106,8 +3044,8 @@ opacity: 0.8;
   
   .img4-5{
     position: absolute; 
-    top: 97px; 
-    left: 114px; 
+    top: 41px; 
+    left: 15px; 
     width: 176px; 
     height: 293px; 
     border-radius: 29px; 
@@ -3145,10 +3083,10 @@ opacity: 0.8;
   .img6-5{
     position: absolute; 
     z-index: 1; 
-    top: 77px; 
-    left: 90px; 
+    top: 31px; 
+    left: 87px; 
     border-radius: 49px; 
-    width: 300px; 
+    width: 359px; 
     height: auto; 
     opacity: 0.5;
   }
@@ -3164,7 +3102,7 @@ opacity: 0.8;
   }
   
   .testimonials h3{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 600;
   font-size: 18px;
   line-height: 21.09px;
@@ -3175,7 +3113,7 @@ opacity: 0.8;
   }
   
   .testimonials h2{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: bold;
     font-size: 24px;
     line-height: 24.61px;
@@ -3248,7 +3186,7 @@ opacity: 0.8;
   }
   
   .user-info h4{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: bold;
   font-size: 18px;
   line-height: 21.09px;
@@ -3257,7 +3195,7 @@ opacity: 0.8;
   }
   
   .user-info p{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-weight: 400;
   font-size: 12px;
   line-height: 14.06px;
@@ -3266,7 +3204,7 @@ opacity: 0.8;
   }
   
   .user-quote p{
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
   font-size: 14px;
   line-height: 16.41px;
   text-align: center;
@@ -3314,7 +3252,7 @@ opacity: 0.8;
    }
     
     .foot1 h3 {
-      font-family: 'Gilroy';
+      font-family: 'Montserrat';
       font-weight: bold;
       font-size: 28px;
       line-height: 16px;
@@ -3325,7 +3263,7 @@ opacity: 0.8;
     
     .foot1 p {
       width: 100%;
-      font-family: 'Gilroy';
+      font-family: 'Montserrat';
       font-size: 15px;
       line-height: 24px;
       color: #1E1E1E;
@@ -3361,7 +3299,7 @@ opacity: 0.8;
     .foot2 a,
     .foot3 a,
     .foot4 a {
-      font-family: 'Gilroy';
+      font-family: 'Montserrat';
       font-weight: 500;
   font-size: 15px;
   line-height: 24px;
@@ -3412,7 +3350,7 @@ opacity: 0.8;
     }
   
     .terms a {
-      font-family: 'Gilroy';
+      font-family: 'Montserrat';
       font-weight: 500;
       font-size: 15px;
       line-height: 24px;
